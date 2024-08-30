@@ -7,6 +7,11 @@ const lastName = "PALOMA";
 const age = 20;
 const schoolEmail = "redi.paloma.swu@phinmaed.com";
 
+// Root route
+app.get('/', (req, res) => {
+    res.send('Welcome to my server! Available routes: /firstname, /lastname, /age, /schoolemail, /mydata');
+});
+
 app.get('/firstname', (req, res) => {
     res.send(firstName);
 });
